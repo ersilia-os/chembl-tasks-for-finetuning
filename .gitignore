@@ -1,3 +1,7 @@
+processed
+.DS_Store
+dev.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

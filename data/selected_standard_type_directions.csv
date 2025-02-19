@@ -1,0 +1,36 @@
+﻿standard_type;standard_units;count;activity_direction
+Potency;nM;4471741;-1
+GI50;nM;2612253;-1
+IC50;nM;2530782;-1
+Inhibition;%;1529105;1
+Percent Effect;%;1328366;1
+Ki;nM;650568;-1
+MIC;ug.mL-1;608019;-1
+Activity;%;560776;1
+EC50;nM;487170;-1
+INHIBITION;%;339133;1
+AC50;nM;232772;-1
+Kd;nM;179228;-1
+MIC;nM;114529;-1
+GI;%;101853;1
+IZ;mm;90853;1
+CC50;nM;89561;-1
+IC50;ug.mL-1;77190;-1
+ED50;mg.kg-1;51862;-1
+% Control;%;50544;1
+LC50;nM;47192;-1
+TGI;nM;43111;-1
+CL;mL.min-1.kg-1;42622;-1
+Emax;%;35061;1
+F;%;29793;1
+MIC90;ug.mL-1;27769;-1
+MIC50;ug.mL-1;25072;-1
+ED50;ug ml-1;16163;-1
+EC50;ug.mL-1;15074;-1
+MIC80;ug.mL-1;14598;-1
+XC50;nM;13587;-1
+%Inhib (Mean);%;12829;1
+Drug uptake;% ID/g;12663;1
+ED50;uM;12659;-1
+MBC;ug ml-1;12226;-1
+Activity;uM;11992;-1
