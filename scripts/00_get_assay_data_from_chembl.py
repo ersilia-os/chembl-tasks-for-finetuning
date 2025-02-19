@@ -209,7 +209,6 @@ def write_datasets(datasets, assay_id):
         df.to_csv(os.path.join(output_dir, f"assay_{assay_id}-{name}.csv"), index=False)
 
 da = get_assays()
-#da = pd.DataFrame({"assay_id": [227], "chembl_id": ["CCHEMBL615260"]})
 
 for i, row in tqdm(da.iterrows(), desc="Iterating over assays", total=da.shape[0]):
     print(i)
