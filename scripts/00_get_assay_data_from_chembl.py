@@ -4,6 +4,7 @@ import psycopg2
 import pandas as pd
 import numpy as np
 from rdkit import Chem
+from rdkit.Chem import Descriptors
 import collections
 from standardiser import standardise
 from tqdm import tqdm
@@ -116,6 +117,11 @@ def define_tasks(df):
         try:
             mol = standardise.run(mol)
             if mol is None:
+                continue
+            wt = Descriptors.MolWt(mol)
+            if wt > 1000:
+                continue
+            if wt < 100:
                 continue
             smi = Chem.MolToSmiles(mol)
             inchikey = Chem.MolToInchiKey(mol)

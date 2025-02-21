@@ -1,0 +1,2 @@
+python scripts/00_get_assay_data_from_chembl.py
+python scripts/01_get_target_data_from_chembl.py
