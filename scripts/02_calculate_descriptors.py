@@ -18,7 +18,7 @@ if not os.path.exists(all_molecules_file):
 
 df = pd.read_csv(all_molecules_file)
 
-BATCH_SIZE = 100000
+BATCH_SIZE = 1000
 
 
 class MorganCountFeaturizer(object):
@@ -188,14 +188,9 @@ class DatamolFeaturizer(object):
                 break
 
         
-
-
-
 print("Calculating Morgan count fingerprints 2048")
 featurizer = MorganCountFeaturizer(n_bits=2048, radius=3)
-all_molecules_file = "all_molecules_test.csv"
-#featurizer.calculate_csv2h5(all_molecules_file, os.path.join(output_dir, "morgan_count_2048.h5"), chunksize=BATCH_SIZE)
-BATCH_SIZE = 10
+featurizer.calculate_csv2h5(all_molecules_file, os.path.join(output_dir, "morgan_count_2048.h5"), chunksize=BATCH_SIZE)
 print("Calculating Datamol descriptors")
 featurizer = DatamolFeaturizer()
 featurizer.calculate_csv2h5(all_molecules_file, os.path.join(output_dir, "datamol_descriptors.h5"), chunksize=BATCH_SIZE)

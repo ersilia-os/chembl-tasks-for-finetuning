@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chembltasks"
+version = "0.1.0"
+description = "Generate ML tasks from ChEMBL for finetuning or training models at scale"
+authors = [{name = "Ersilia Open Source Initiative", email = "miquel@ersilia.io"}]
+dependencies = [
+    "tqdm"
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+where = ["src"]
