@@ -14,7 +14,7 @@ Note that train, validation and tests splits are done at the target level, ensur
 
 ## Get the necessary data
 
-You can download the `processed` folder from [here](https://example.com). Unzip the file and place the `processed` folder in the root of the current directory.
+You can download the `processed` folder from [here](https://chempfn-data.s3.eu-central-1.amazonaws.com/chembl-tasks-for-finetuning/processed.zip). Unzip the file and place the `processed` folder in the root of the current directory.
 
 Alternatively, you can produce the `processed` data yourself by running, sequentially, all scripts from the `scripts` subfolder.
 
