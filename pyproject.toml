@@ -8,7 +8,9 @@ version = "0.1.0"
 description = "Generate ML tasks from ChEMBL for finetuning or training models at scale"
 authors = [{name = "Ersilia Open Source Initiative", email = "miquel@ersilia.io"}]
 dependencies = [
-    "tqdm"
+    "tqdm",
+    "h5py",
+    "pandas"
 ]
 readme = "README.md"
 requires-python = ">=3.8"
